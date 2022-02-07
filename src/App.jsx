@@ -333,7 +333,7 @@ function App() {
   function getAlerts() {
     const address = input.current.value.trim();
     if (address !== "") {
-      axios.post("/getAlerts", { address: address }).then((value) => {
+      axios.post("/api/getAlerts", { address: address }).then((value) => {
         const data = value.data
           ? value.data
           : { address: address, status: value.status };
