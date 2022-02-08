@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import style from "@emotion/styled";
 import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
-import { Button } from "@mui/material";
+import { Button,Checkbox } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import ReplayIcon from "@mui/icons-material/Replay";
@@ -170,7 +170,7 @@ function getJSX(alertsHTML, alerts, start, end) {
           padding: "0",
           lineHeight: "1.5rem",
         }}
-      >
+      ><Checkbox />
         {temp}
       </ul>
     );
